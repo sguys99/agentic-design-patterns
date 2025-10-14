@@ -930,6 +930,7 @@ dependencies = [
     { name = "langchain-aws" },
     { name = "langchain-community" },
     { name = "langchain-litellm" },
+    { name = "langchain-openai" },
     { name = "langgraph" },
     { name = "lightning" },
     { name = "litellm" },
@@ -1009,6 +1010,7 @@ requires-dist = [
     { name = "langchain-aws", specifier = "==0.2.31" },
     { name = "langchain-community", specifier = "==0.3.29" },
     { name = "langchain-litellm", specifier = "==0.2.2" },
+    { name = "langchain-openai", specifier = ">=0.3.35" },
     { name = "langgraph", specifier = "==0.6.6" },
     { name = "lightning", specifier = "==2.5.5" },
     { name = "litellm", specifier = "==1.76.3" },
@@ -2062,7 +2064,7 @@ wheels = [
 
 [[package]]
 name = "langchain-core"
-version = "0.3.77"
+version = "0.3.79"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "jsonpatch" },
@@ -2073,9 +2075,9 @@ dependencies = [
     { name = "tenacity" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/40/cc/786184e5f6a921a2aa4d2ac51d3adf0cd037289f3becff39644bee9654ee/langchain_core-0.3.77.tar.gz", hash = "sha256:1d6f2ad6bb98dd806c6c66a822fa93808d821e9f0348b28af0814b3a149830e7", size = 580255, upload-time = "2025-10-01T14:34:37.368Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c8/99/f926495f467e0f43289f12e951655d267d1eddc1136c3cf4dd907794a9a7/langchain_core-0.3.79.tar.gz", hash = "sha256:024ba54a346dd9b13fb8b2342e0c83d0111e7f26fa01f545ada23ad772b55a60", size = 580895, upload-time = "2025-10-09T21:59:08.359Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/64/18/e7462ae0ce57caa9f6d5d975dca861e9a751e5ca253d60a809e0d833eac3/langchain_core-0.3.77-py3-none-any.whl", hash = "sha256:9966dfe3d8365847c5fb85f97dd20e3e21b1904ae87cfd9d362b7196fb516637", size = 449525, upload-time = "2025-10-01T14:34:35.672Z" },
+    { url = "https://files.pythonhosted.org/packages/fc/71/46b0efaf3fc6ad2c2bd600aef500f1cb2b7038a4042f58905805630dd29d/langchain_core-0.3.79-py3-none-any.whl", hash = "sha256:92045bfda3e741f8018e1356f83be203ec601561c6a7becfefe85be5ddc58fdb", size = 449779, upload-time = "2025-10-09T21:59:06.493Z" },
 ]
 
 [[package]]
@@ -2089,6 +2091,20 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/37/82/a39244efb54ecbe6314852330311bdabd8298fdefc09296c6d4f7b9219d9/langchain_litellm-0.2.2.tar.gz", hash = "sha256:317b320573661f96afb70786c2b3b690acdfaff14d324e87dca4207ff3d44c5e", size = 10854, upload-time = "2025-07-11T17:58:04.921Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/6b/b7/f4dce688cb63373fb0b244f2aba598871142f293fa873052e0a7943741d0/langchain_litellm-0.2.2-py3-none-any.whl", hash = "sha256:f17ef94e819dddbe13c5ce7c1dbd875ca432ecf0e1c5b16e7fc2413c9a1d5fbe", size = 11605, upload-time = "2025-07-11T17:58:03.9Z" },
+]
+
+[[package]]
+name = "langchain-openai"
+version = "0.3.35"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "langchain-core" },
+    { name = "openai" },
+    { name = "tiktoken" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/fb/96/06d0d25a37e05a0ff2d918f0a4b0bf0732aed6a43b472b0b68426ce04ef8/langchain_openai-0.3.35.tar.gz", hash = "sha256:fa985fd041c3809da256a040c98e8a43e91c6d165b96dcfeb770d8bd457bf76f", size = 786635, upload-time = "2025-10-06T15:09:28.463Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d8/d5/c90c5478215c20ee71d8feaf676f7ffd78d0568f8c98bd83f81ce7562ed7/langchain_openai-0.3.35-py3-none-any.whl", hash = "sha256:76d5707e6e81fd461d33964ad618bd326cb661a1975cef7c1cb0703576bdada5", size = 75952, upload-time = "2025-10-06T15:09:27.137Z" },
 ]
 
 [[package]]

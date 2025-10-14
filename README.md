@@ -1,4 +1,4 @@
-# ml-project-template
+# Agentic Design Patterns
 
 ### 1. 환경설정
 ```bash
